@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageViewPG"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/rating_pg13" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nm"
+            android:textAppearance="@android:style/TextAppearance.Large" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textViewDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dt" />
+
+            <TextView
+                android:id="@+id/textViewGenre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gn" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewDescipt"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="@string/de" />
+
+        <TextView
+            android:id="@+id/textViewWatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/watch" />
+
+        <TextView
+            android:id="@+id/textViewTheater"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="@string/theater" />
+
+        <RatingBar
+            android:id="@+id/ratingBarMovie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="true"
+            android:rating="5"
+            android:numStars="5"/>
+
+    </LinearLayout>
+
+</LinearLayout>
